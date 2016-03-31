@@ -39,7 +39,7 @@ class UserLogin
     else
       puts "Uh oh! Username & pw don't match.  Sorry try again."
     end
-  end
+    end
 
   class TextCounter
 
