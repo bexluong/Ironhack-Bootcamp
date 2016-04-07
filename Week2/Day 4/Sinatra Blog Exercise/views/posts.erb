@@ -1,0 +1,31 @@
+<!-- views/add.erb -->
+<!doctype html>
+<html>
+<head>
+  <title>Blog Posts</title>
+</head>
+<body>
+  <h1>Not Another Blog</h1>
+  <h4><em>blogger like you never blogged before</h4></em>
+  <ul>
+  <% @posts.each do |post| %>
+  <li>
+  <%= post.title %> -
+  <%= post.date.strftime('%v')%> -
+  <%= post.content %>
+  </li>
+  <% end %>
+  </ul>
+</body>
+</html>
+
+
+<ul>
+  <% @posts.each_with_index do | post, index| %>
+  <li>
+    <a href = "LINK" >
+    -
+    <% DATE CHANGE HERE %>
+  </li>
+  <% end %>
+</ul>

@@ -1,0 +1,11 @@
+<h1>Mia Pizza</h1>
+<p>Choose from these delicious ingredients:</p>
+
+<ul>
+<% @ingredients.each do |single_ingredient| %>
+<li>
+<%= single_ingredient %>
+</li>
+<% end %>
+</ul>
+<img src="http://localhost:4567/images.jpg" alt="pizzas">

@@ -1,23 +1,21 @@
- require 'ruby-dictionary'
- require 'pry'
+require 'ruby-dictionary'
+require 'pry'
 
- class WordChain
-   attr_accessor :dictionary
+class WordChain
+  attr_accessor :dictionary
 
-   def initialize(dictionary)
-     @dictionary = dictionary
-   end
+  def initialize(dictionary)
+    @dictionary = dictionary
+  end
 
-   def find_chain(start_word, end_word)
-     (start_word..end_word).each {|x|
-       if @dictionary.exists?(x) == true
-         puts x
-       end
-     }
-   end
- end
+  def find_chain(start_word, end_word)
+    (start_word..end_word).each do |x|
+      puts x if @dictionary.exists?(x) == true
+    end
+  end
+end
 
- dictionary = Dictionary.from_file("/usr/share/dict/words")
+dictionary = Dictionary.from_file('/usr/share/dict/words')
 
- my_chain = WordChain.new(dictionary)
- my_chain.find_chain("cat", "dog")
+my_chain = WordChain.new(dictionary)
+my_chain.find_chain('cat', 'dog')
