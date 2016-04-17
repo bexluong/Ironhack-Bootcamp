@@ -1,0 +1,19 @@
+<!-- views/add.erb -->
+<!doctype html>
+<html>
+  <head>
+    <title>New Blog Post</title>
+  </head>
+  <body>
+    <h1>New Blog Post</h1>
+    <form action="/created_post" method="POST">
+  <input type="text" name="title" placeholder="title">
+  <input type="text" name="content" placeholder="content">
+  <input type="text" name="author" placeholder="author">
+  <input type="text" name="category" placeholder="category">
+
+  <button type="submit" name="btn" value="edit">Submit Post!</button>
+  </form>
+
+  </body>
+</html>

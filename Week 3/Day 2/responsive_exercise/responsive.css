@@ -1,0 +1,24 @@
+.container {
+  margin: 0 auto;/*left right 0 top bottom auto */
+}
+.row {
+  margin-left: -20px;
+
+}
+/* this selector will apply to all classes that have the word span*/
+[class*="span"] {
+  display: inline;
+  float: left;
+  margin-left: 20px;
+  padding-top: 20px;
+  border-bottom: 2px solid grey;
+  }
+
+@media only screen and (min-width: 768px) {
+  .span-one-third {
+    width: 30%;
+  }
+  .container {
+    width: 940px;
+  }
+}

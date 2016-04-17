@@ -1,0 +1,31 @@
+
+<!doctype html>
+<html>
+  <head>
+    <title>Search Results</title>
+      <style>
+
+        .button { background-color: #00ccd5;
+                  padding: 10px;
+                  color: #fff;
+                  border: none;
+                  font-size: 18px;
+                  font-weight: bold;}
+      </style>
+    </head>
+    <body>
+      <h1>Movie Trivia! Which movie was released in this <%= @randomized_year %>?</h1>
+ <% @search_results.each do |movie| %>
+ <img src ="<%= movie.poster %>" onClick="alert(<%= @validation %>? 'yay' : 'nay');" height = "500px" width="300px"/>
+
+ <% end %>
+    <form action="/results" method="POST">
+
+
+
+  <input type="text" name="search_word" placeholder="search for it">
+  <button class="button" type="submit"  name="btn" value="edit">Play Again!</button>
+  </form>
+
+  </body>
+</html>

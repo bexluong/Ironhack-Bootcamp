@@ -1,0 +1,31 @@
+
+<!doctype html>
+<html>
+  <head>
+    <title>Top 9 Movie Search</title>
+<style>
+
+    body {  font: 1.2em arial, sans-serif;
+                background-image: url(desktop13.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                margin: 0;
+                color: #000;}
+
+    .button { background-color: #00ccd5;
+            padding: 10px;
+            color: #fff;
+            border: none;
+            font-size: 18px;
+            font-weight: bold;}
+  </style>
+</head>
+  <body>
+    <h1>Search your movies with a Keyword!</h1>
+    <form action="/results" method="POST">
+  <input type="text" name="search_word" placeholder="search for it">
+  <button class="button" type="submit"  name="btn" value="edit">Submit Word!</button>
+  </form>
+
+  </body>
+</html>

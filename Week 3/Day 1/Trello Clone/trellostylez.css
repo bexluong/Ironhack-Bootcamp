@@ -1,0 +1,40 @@
+body {
+  background-image: url(shutterstock_134707556.jpg);
+  background-size: cover;
+  padding-bottom: 70px;
+}
+.toprowish {
+  background-color: black;
+  opacity: 0.2;
+  box-sizing: border-box;
+
+}
+
+.rightline{
+  margin-top: auto;
+  float: right;
+  text-align: center;
+}
+
+.secondrow {
+  display: inline-block;
+    width: 100%;
+}
+.agileboard {
+  font: 18px "Helvetica Neue", Arial;
+  color:white;
+  font-weight: bold;
+
+}
+.listy{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+}
+.lister{
+  display: inline;
+}
+.boards {
+  background-color: grey;
+}

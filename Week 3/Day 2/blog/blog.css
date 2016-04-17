@@ -1,0 +1,67 @@
+body {
+  background-color: #F5F5F5;
+  font-family: Roboto;
+}
+.postintro {
+  margin-left: 60px;
+  padding: 5px
+}
+.commentbox {
+  background-color: #FFF;
+  width: 30%;
+  padding: 20px;
+  border-radius: 5px;
+}
+.commetrow1 {
+  padding: 10px;
+}
+.commentrow2 {}
+.commentcontent1 {
+  margin-left: -10px;
+  color: #333;
+  padding: 10px;
+}
+#btn-space {
+  margin-right: 5px;
+}
+.btnnum {
+  color: #F3AB4C;
+  margin-right: 5px;
+}
+.btnnow {
+  color: #f64f5a;
+  margin-right: 5px;
+}
+.btncode {
+  color: #aaa;
+  margin-right: 5px;
+}
+.btncomment {
+  color: #2889d8;
+  border-radius: 25px;
+  border-color: #2889d8;
+}
+.dot {
+  padding: 5px;
+}
+.heart {
+  color: red;
+  padding: 5px;
+}
+.foofoo {
+  padding: 5px;
+}
+.likessec {
+  color: #aaa;
+  font-size: small;
+}
+.meatycontent {
+  color: #aaa;
+  font-size: small;
+  display: inline-block;
+  ;
+}
+.namehead {
+  color: #2889d8;
+  font-size: medium;
+}

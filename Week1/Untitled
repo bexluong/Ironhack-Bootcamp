@@ -1,0 +1,10 @@
+class Person(name, other_name)
+  def initialize
+    @name = name
+    @other_name = other_name
+  end
+
+  def greet
+    "Hi #{@other_name}, my name is #{@name}"
+  end
+end
