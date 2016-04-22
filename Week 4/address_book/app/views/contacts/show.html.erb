@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Show Contacts List</title>
+  </head>
+  <body>
+
+    <h1><%= @reqcontact.name %></h1>
+
+    <ul>
+      <li>Address:
+        <%= @reqcontact.address %>
+      </li>
+      <li>Phone:
+        <%= @reqcontact.phone %></li>
+      <li>Email:
+        <%= @reqcontact.email %></li>
+    </ul>
+
+    <%= link_to "Add New Contact", "/new" %>
+  <%= link_to "Return to Contact List", "/index" %>
+  </body>
+</html>

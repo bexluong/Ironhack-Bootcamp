@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>results</title>
+</head>
+<body>
+
+<h1>Word Central</h1>
+<h2>Here are your results!</h2>
+<p>Your text: <%= @text %><br>
+The word count: <%=   @word_count %><br>
+The estimated reading time of this text is: <%= @word_count/4.58 %> seconds.</p>
+<% counts = Hash.new(0) %>
+<% @words.each do |word| %>
+<%counts[word] += 1 %>
+<% end %>
+<%= counts %>
+
+</body>
+
+</html>
