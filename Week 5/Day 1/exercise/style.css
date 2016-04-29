@@ -1,0 +1,18 @@
+.container {
+  background-color: gray;
+  width: 500px;
+  height:500px;
+}
+
+.cell {
+  border: 1px solid white;
+  box-sizing: border-box;
+  display: inline-block;
+  height: 10%;
+  width: 10%;
+  background-color: blue;
+}
+
+.active {
+  background-color: pink;
+}

@@ -1,0 +1,11 @@
+.container {
+  background-color: gray;
+  width: 300px;
+  height:100px;
+}
+
+.showYoPhraseHideYoPhrase {
+  background-color: pink;
+  width: 300px;
+  height:100px;
+}
