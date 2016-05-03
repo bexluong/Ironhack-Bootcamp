@@ -8,13 +8,11 @@ class ContactsController < ApplicationController
 
 
   def new
-
-
   end
 
   def create
     #making new instance of contact
-    contact = Contact.new(
+    contact = Contact.new
     :name => params[:contact][:name],
     :address => params[:contact][:address],
     :phone => params[:contact][:phone],

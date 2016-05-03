@@ -1,23 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Contacts List</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8">
+    <title>Contacts List</title>
+  </head>
+  <body>
 
-  <h1>Here are your list of contacts:</h1>
+    <h1>Here are your list of contacts:</h1>
 
-  <ul><% @contacts.each do |contact| %>
-  <li>
-    <!-- <a href="/show/<%= contact.id %>"><%= contact.name %></a> -->
-    <%= link_to contact.name, "/show/#{contact.id}" %>
+    <ul><% @contacts.each do |contact| %>
+      <li>
+        <!-- <a href="/show/<%= contact.id %>"><%= contact.name %></a> -->
+        <%= link_to contact.name, "/show/#{contact.id}" %>
 
-  </li>
-  <% end %>
-  </ul>
+      </li>
+      <% end %>
+    </ul>
 
-
-<%= link_to "Add New Contact", "/new" %>
-</body>
+    <%= link_to "Add New Contact", "/new" %>
+  </body>
 </html>

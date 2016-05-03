@@ -9,8 +9,12 @@ var Viking = function(name, health, strength) {
 };
 var VikingPit = function (vikingEin, vikingTveir) {
   this.round = 3;
-  this.vikingEin = vikingTveir;
-  this.vikingTveir = vikingEin;
+  this.vikingEin = vikingEin;
+  this.vikingTveir = vikingTveir;
+
+  function closeToDeath(){
+  
+  };
 
 for (i = 0; i < this.round; i++) {
     vikingEin.health -= vikingTveir.strength;

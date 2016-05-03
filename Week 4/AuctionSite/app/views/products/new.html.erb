@@ -1,0 +1,21 @@
+<!-- Make a new product page where users can fill out a form to post a new product - the form should include the title, description, and deadline to bid.
+
+Make an index page where all of the products are listed and a product detail page for each product. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>new product</title>
+</head>
+<body>
+
+  <%= form_for [@user, @my_products] do |p| %>
+      Title <%= p.text_field :title %>
+      Description<%= p.text_area :description %>
+       <%= p.text_field :title %>
+       <%= p.datetime_field :deadline %>
+       <%= p.submit "Create" %>
+     <% end %>
+
+</body>
+</html>
